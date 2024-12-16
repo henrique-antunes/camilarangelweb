@@ -1221,6 +1221,27 @@ p.form-message.error {
   position: absolute;
   top: 0;
   right: 0; }
+  
+  .img1 {
+    position: absolute;
+    max-width: 70%; /* Ensure images stay within the container */
+    object-fit: contain; /* Maintain aspect ratio */
+
+    top: 5%; /* Adjust positioning */
+    left: 5%;
+    z-index: 2; /* Place this image on top */
+  }
+  
+  .img2 {
+    position: absolute;
+    max-width: 50%; /* Ensure images stay within the container */
+    max-height: 70%; /* Ensure images stay within the container */
+    object-fit: contain; /* Maintain aspect ratio */
+
+    top: 40%; /* Adjust positioning */
+    left: 30%;
+    z-index: 1; /* Place this image below img1 */
+  }
 
 /*===========================
        10.FOOTER css 
