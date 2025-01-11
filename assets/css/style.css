@@ -103,6 +103,12 @@ p {
   width: 100%;
   height: 100%; }
 
+.home-photo {
+  border-radius: 5px;
+  box-shadow: -13px 13px 0px 0px #BD8C8F;
+  max-width: 80%;
+}
+
 /*===== All Button Style =====*/
 .main-btn {
   display: inline-block;
@@ -691,21 +697,8 @@ p {
 .about-image {
   position: relative; }
   .about-image::before {
-    position: absolute;
-    content: '';
-    background-image: url(../images/about/dots.jpg);
-    background-position: center center;
-    background-size: 100%;
-    width: 375px;
-    height: 350px;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    z-index: -1; }
+
+  }
     @media (max-width: 767px) {
       .about-image::before {
         display: none; } }
@@ -792,6 +785,18 @@ p {
 .about-content .about-welcome {
   font-size: 24px;
   color: #EB3656;
+  text-transform: uppercase; }
+  @media (max-width: 767px) {
+    .about-content .about-welcome {
+      font-size: 18px; } }
+
+.home-content .home-text {
+  color: white;
+}
+
+.home-content .home-welcome {
+  font-size: 30px;
+  color: #ffdcdc;
   text-transform: uppercase; }
   @media (max-width: 767px) {
     .about-content .about-welcome {
